@@ -112,10 +112,72 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; color: var
 .lock-box p  { opacity:.85; font-size:.95rem; }
 
 /* 사이드바 */
-[data-testid="stSidebar"] { background: #0A5C7F; }
-[data-testid="stSidebar"] * { color: white !important; }
+[data-testid="stSidebar"] {
+    background: #F0F6FA;
+    border-right: 2px solid #D0E8F5;
+}
+
+/* 사이드바 일반 텍스트 */
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] div,
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] .stMarkdown,
+[data-testid="stSidebar"] .stMarkdown p {
+    color: #1A2B3C !important;
+}
+
+/* 사이드바 입력 필드 라벨 */
+[data-testid="stSidebar"] .stTextInput label,
 [data-testid="stSidebar"] .stSelectbox label,
-[data-testid="stSidebar"] .stTextInput label { color: #A8D4E6 !important; font-size:.8rem; }
+[data-testid="stSidebar"] .stRadio label,
+[data-testid="stSidebar"] .stCheckbox label {
+    color: #0A5C7F !important;
+    font-weight: 600 !important;
+    font-size: .85rem !important;
+}
+
+/* 사이드바 입력창 텍스트 */
+[data-testid="stSidebar"] input,
+[data-testid="stSidebar"] textarea,
+[data-testid="stSidebar"] select {
+    color: #1A2B3C !important;
+    background: #FFFFFF !important;
+    border: 1px solid #B0CEDE !important;
+}
+
+/* 사이드바 구분선 */
+[data-testid="stSidebar"] hr {
+    border-color: #C0D8E8 !important;
+}
+
+/* 사이드바 코드블록 */
+[data-testid="stSidebar"] code,
+[data-testid="stSidebar"] pre {
+    background: #E2EEF5 !important;
+    color: #1A2B3C !important;
+    font-size: .78rem !important;
+}
+
+/* 사이드바 버튼 */
+[data-testid="stSidebar"] .stButton > button {
+    background: #0A5C7F !important;
+    color: white !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+[data-testid="stSidebar"] .stButton > button:hover {
+    background: #0D7A9E !important;
+}
+
+/* 사이드바 타이틀 강조 */
+[data-testid="stSidebar"] strong {
+    color: #0A5C7F !important;
+    font-weight: 700 !important;
+}
 
 /* 정보 칩 */
 .info-chip {
